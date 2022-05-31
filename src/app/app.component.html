@@ -1,0 +1,24 @@
+<div>
+  <auth-form 
+    (submitted)="createUser($event)">
+    <h3>Create account</h3>
+    <button type="submit">
+      Join us
+    </button>
+  </auth-form>
+  <auth-form 
+    (submitted)="loginUser($event)">
+   
+                <auth-remeber class="remember"
+                (checked)="rememberUser($event)">
+                </auth-remeber>
+                <button type="submit">
+                  Login
+                </button>
+                <h3>Login ;D</h3>
+
+
+  </auth-form>
+  
+</div>
+zzzzzzzz

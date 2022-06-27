@@ -3,13 +3,19 @@
       <ng-content select="h3"></ng-content>
       <label>
         Email address
-        <input type="email" name="email" ngModel>
+        <input type="email" name="email" ngModel #email>
       </label>
       <label>
         Password
         <input type="password" name="password" ngModel>
       </label>
-      <ng-content select="auth-remeber"></ng-content> 
-      <ng-content select="button"></ng-content> 
+      <ng-content select="auth-remeber"></ng-content>
+      <div *ngIf="showMessage">
+       You will be logged in for 30 days!
+      </div>
+      <ng-content select="button"></ng-content>
     </form>
   </div>
+
+
+  <button>button</button>

@@ -12,7 +12,8 @@ export class AuthRememberComponent {
     
   
     onChecked(event: any): void{
-      this.checked.emit(this.event.target?.checked);
+      this.checked.emit(this.event.target!.checked)
+  
     }
   
   }
